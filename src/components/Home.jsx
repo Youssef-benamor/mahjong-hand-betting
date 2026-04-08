@@ -3,15 +3,11 @@ import { useState, useEffect } from "react";
 export default function Home({ setScreen, leaderboard, setLeaderboard }) {
   const [showRules, setShowRules] = useState(false);
 
-  // Sound on home
   useEffect(() => {
-    const audio = new Audio("/home.mp3");
-    audio.volume = 0.5;
-    audio.play().catch((e) => console.log("Home sound prevented"));
-    return () => {
-      audio.pause();
-      audio.currentTime = 0;
-    };
+    import("../utils/audioManager.js").then((module) => {
+      module.default.initHome();
+      module.default.playHome();
+    });
   }, []);
 
   // Load leaderboard from localStorage on mount
@@ -21,6 +17,14 @@ export default function Home({ setScreen, leaderboard, setLeaderboard }) {
       setLeaderboard(JSON.parse(saved));
     }
   }, [setLeaderboard]);
+
+  const handlePlayClick = async () => {
+    console.log("=== PLAY GAME BUTTON CLICKED ===");
+    await import("../utils/audioManager.js").then((module) => {
+      module.default.playHome();
+    });
+    setScreen("game");
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white p-6 flex flex-col items-center">
@@ -34,12 +38,14 @@ export default function Home({ setScreen, leaderboard, setLeaderboard }) {
       </p>
 
       {/* PLAY BUTTON */}
-      <button
-        onClick={() => setScreen("game")}
-        className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-10 rounded-2xl text-xl shadow-2xl transition transform hover:scale-105 mb-12"
-      >
-        ▶️ Play Game
-      </button>
+      <div className="flex gap-4 items-center mb-12">
+        <button
+          onClick={handlePlayClick}
+          className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-10 rounded-2xl text-xl shadow-2xl transition transform hover:scale-105"
+        >
+          ▶️ Play Game
+        </button>
+      </div>
 
       {/* LEADERBOARD */}
       <div className="w-full max-w-md bg-gray-800 rounded-2xl p-6 shadow-xl mb-10">
