@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function Home({ setScreen, leaderboard, setLeaderboard }) {
+export default function home({ setScreen, leaderboard, setLeaderboard }) {
   const [showRules, setShowRules] = useState(false);
 
   useEffect(() => {
