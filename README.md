@@ -98,5 +98,4 @@ This project is open-source. Feel free to fork, modify, and build your own versi
 
 <div align="center"\>
 <p\><i\>"Complexity is the enemy of execution."<i\>\<p\>
-<sub>Built with React & Gemini AI\<sub\>
 </div>
