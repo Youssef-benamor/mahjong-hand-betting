@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import GameView from "./view/GameView";
-import Home from "./components/home.jsx";
+import Home from "./components/Home";
 
 export default function App() {
   const [screen, setScreen] = useState("home");
