@@ -1,4 +1,4 @@
-````html
+
 <div align="center">
   <img
     src="https://img.icons8.com/fluency/144/mahjong.png"
@@ -45,7 +45,7 @@ feel. - **Dynamic HUD:** Live score, combo tracking, and deck integrity bar. -
 <br />
 
 ## 🛠️ Quick Start ### 1. Installation ```bash npm install
-````
+
 
 ### 2\. Development
 
@@ -59,44 +59,43 @@ npm run dev
 npm run build
 ```
 
-\<br /\>
+<br /\>
 
 ## 🤝 Development Attribution
 
 This project is a collaborative effort between human architectural design and AI-driven optimization.
 
-\<table width="100%"\>
-\<tr\>
-\<td width="50%" valign="top"\>
-\<h3\>✍️ Handwritten\</h3\>
-\<ul\>
-\<li\>\<strong\>Core Architecture:\</strong\> Component hierarchy and folder structure.\</li\>
-\<li\>\<strong\>Game Engine:\</strong\> The \<code\>useGame\</code\> custom hook and tile matching logic.\</li\>
-\<li\>\<strong\>Data Flow:\</strong\> Leaderboard storage and persistent game history.\</li\>
-\<li\>\<strong\>Game Rules:\</strong\> Scoring algorithms and win/loss conditions.\</li\>
-\</ul\>
-\</td\>
-\<td width="50%" valign="top"\>
-\<h3\>🤖 AI Assisted\</h3\>
-\<ul\>
-\<li\>\<strong\>UI Polish:\</strong\> Generation of advanced Tailwind CSS utility patterns and glassmorphism.\</li\>
-\<li\>\<strong\>Debugging:\</strong\> Resolving asynchronous state updates and useEffect dependencies.\</li\>
-\<li\>\<strong\>Optimization:\</strong\> Refactoring the render cycle for better performance.\</li\>
-\<li\>\<strong\>Semantics:\</strong\> Implementing modern HTML5 tags (aside, section, figure).\</li\>
-\</ul\>
-\</td\>
-\</tr\>
-\</table\>
+<table width="100%"\>
+<tr\>
+<td width="50%" valign="top"\>
+<h3\>✍️ Handwritten\</h3\>
+<ul\>
+<li\><strong\>Core Architecture:<strong\> Component hierarchy and folder structure.<li\>
+<li\><strong\>Game Engine:<strong\> The \<code\>useGame\</code\> custom hook and tile matching logic.<li\>
+<li\><strong\>Data Flow:<strong\> Leaderboard storage and persistent game history.<li\>
+<li\><strong\>Game Rules:<strong\> Scoring algorithms and win/loss conditions.<li\>
+</ul\>
+</td>
+<td width="50%" valign="top"\>
+<h3\>🤖 AI Assisted\</h3\>
+<ul\>
+<li\><strong\>UI Polish:</strong\> Generation of advanced Tailwind CSS utility patterns and glassmorphism.<li\>
+<li\><strong\>Debugging:</strong\> Resolving asynchronous state updates and useEffect dependencies.<li\>
+<li\><strong\>Optimization:</strong\> Refactoring the render cycle for better performance.<li\>
+<li\><strong\>Semantics:</strong\> Implementing modern HTML5 tags (aside, section, figure).<li\>
+</ul\>
+</td\>
+</tr\>
+</table\>
 
-\<br /\>
+<br \>
 
 ## 📜 License
 
 This project is open-source. Feel free to fork, modify, and build your own version.
 
-\<hr /\>
+<hr /\>
 
-\<div align="center"\>
-\<p\>\<i\>"Complexity is the enemy of execution."\</i\>\</p\>
-\<sub\>Built with React & Gemini AI\</sub\>
-\</div\>
+<div align="center"\>
+<p\><i\>"Complexity is the enemy of execution."<i\>\<p\>
+</div>
