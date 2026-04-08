@@ -1,4 +1,4 @@
-````html
+
 <div align="center">
   <img
     src="https://img.icons8.com/fluency/144/mahjong.png"
